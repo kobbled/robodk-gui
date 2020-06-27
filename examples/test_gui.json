@@ -1,0 +1,60 @@
+{"root" : [
+    {
+    "panel": {
+        "frm_objects" : {
+            "members" : {
+                "TABLE_NAME" : ["Table Name", "StringVar"],
+                "PICKOBJ_NAME" : ["Object Name", "StringVar"],
+                "ROBOT_NAME" : ["Robot Name", "StringVar"]
+            }
+        }
+    }},
+    {
+    "panel" : {
+        "frm_decision" : {
+            "toggle" : {
+                "variable" : "MANUAL_PLACE",
+                "label": "Manually select target",
+                "trueframe" : {
+                    "name" : "frm_manual",
+                    "radio" : {
+                        "variable" : "DROP_LOC",
+                        "type" : "IntVar",
+                        "modes" : {"bin1": 1,
+                                   "bin2": 2,
+                                   "bin3": 3}
+                    }
+                },
+                "falseframe" : {
+                    "name" : "frm_auto",
+                    "members" : {
+                        "IN_EMPTY" : ["Find empty bin", "BooleanVar"],
+                        "SORT" : ["sort parts", "BooleanVar"]
+                    }
+                }
+            }
+        } 
+    }},
+    {
+    "panel" : {
+        "frm_prog" : {
+            "progress" : {
+                "variable" : "PROG_BAR",
+                "length" : 100,
+                "determinate" : true
+            }
+        }
+    }},
+    {
+        "panel": {
+        "frm_user" : {
+            "spacer" : {"color" : "", "options" : {"width" : 20, "height" : 1}},
+            "display" : {
+                "variable" : "NOTIFY_MSG",
+                "type" : "StringVar",
+                "color" : "yellow"
+            }
+        }
+    }}
+
+]}
