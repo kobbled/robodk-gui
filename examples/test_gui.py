@@ -31,7 +31,7 @@ RDK = Robolink()
 gui = tkGUI("Test GUI!")
 
 
-#create buttone event
+#create button event
 def move_to_table():
     #update varibles from gui
     gui.updateVars()

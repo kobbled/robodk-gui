@@ -1,3 +1,11 @@
+"""
+User defined types
+-----------------------
+
+These structures are used in the parse tree for organzing and storing
+the json file in a usable format for :class:`creategui.tkGUI`
+"""
+
 import collections
 
 tkvars = collections.namedtuple('tkvars', 'name label type parent')
