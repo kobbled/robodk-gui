@@ -327,7 +327,10 @@ class tkGUI:
         varname = "self." + varname
 
         exec(varname + " = "+ type +"()")
-        exec("Label("+parent+", textvariable="+varname+", bg='"+color+"').pack()")
+        if color:
+            exec("Label("+parent+", textvariable="+varname+", bg='"+color+"').pack()")
+        else:
+            exec("Label("+parent+", textvariable="+varname+").pack()")
 
     def createTextbox(self, varname, label, type, parent="root"):
         """Create a textbox of data `type` that the user can input
