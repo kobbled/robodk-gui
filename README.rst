@@ -188,16 +188,18 @@ frames
 
 Frame containers are used to organize the gui layout, with a general structure of:
 
-{"root" : [{
-    "panel" : {
-        "frm1" : {
-        },
-        "frm2" : {
-        }
-    }
+.. code-block:: json
 
-    }]
-}
+    {"root" : [{
+        "panel" : {
+            "frm1" : {
+            },
+            "frm2" : {
+            }
+        }
+
+        }]
+    }
 
 `root` must be the first thing declares in the json file.
 
@@ -215,22 +217,22 @@ for defining a panel, and its internal contents.
 
 .. code-block:: json
 
-"toggle" : {
-    "variable" : "TOGGLE1",
-    "label": "toggle example",
-    "trueframe" : {
-        "name" : "frame_name1",
-        "members" : {
-        "VAR1" : ["Variable Name 1", "StringVar"]
-        }
-    },
-    "falseframe" : {
-        "name" : "frame_name2",
-        "members" : {
-        "VAR2" : ["Variable Name 2", "StringVar"]
+    "toggle" : {
+        "variable" : "TOGGLE1",
+        "label": "toggle example",
+        "trueframe" : {
+            "name" : "frame_name1",
+            "members" : {
+            "VAR1" : ["Variable Name 1", "StringVar"]
+            }
+        },
+        "falseframe" : {
+            "name" : "frame_name2",
+            "members" : {
+            "VAR2" : ["Variable Name 2", "StringVar"]
+            }
         }
     }
-}
 
 Display Notification
 ^^^^^^^^^^^^^^^^^^^^^^^
