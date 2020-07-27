@@ -258,11 +258,11 @@ class tkGUI:
         :type widget_var: string
         """
         try:
-            print(msg)
             exec("self." + widget_var + ".set('" + msg + "')")
             self.root.update_idletasks()
             robolink.ShowMessage(msg, False)
         except:
+            print(msg)
             pass
 
     def updateProgress(self, widget_var, val):

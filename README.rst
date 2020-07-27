@@ -17,12 +17,8 @@ Install
 .. code-block:: powershell
 
     git clone https://github.com/kobbled/robodk-gui
-
-Add to PYTHONPATH:
-
-.. code-block:: powershell
-
-    set PYTHONPATH=%PYTHONPATH%;C:/path/to/robodk-gui/src
+    cd robodk-gui
+    python setup.py install
 
 
 Usage
@@ -32,10 +28,6 @@ use by importing the module
 
 .. code-block:: python
 
-    #sys.path.append is nessecary for robodk scripts that do not
-    #have visibility to environment variables and $PYTHONPATH
-    
-    sys.path.append(os.path.abspath('C:/path/to/robodk-gui/src'))
     from parsejson2gui import *
     from creategui import *
 
