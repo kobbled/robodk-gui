@@ -2,7 +2,7 @@ import os
 import json
 
 #import collection types
-from tk_types import *
+from robodkgui.tk_types import *
 
 
 class guiparse:

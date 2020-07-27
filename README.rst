@@ -18,7 +18,7 @@ Install
 
     git clone https://github.com/kobbled/robodk-gui
     cd robodk-gui
-    python setup.py install
+    pip3 install .
 
 
 Usage
@@ -28,8 +28,8 @@ use by importing the module
 
 .. code-block:: python
 
-    from parsejson2gui import *
-    from creategui import *
+    from robodkgui.parsejson import *
+    from robodkgui.create import *
 
 First the JSON file must be parsed into the proper data format.
 This is done with the :mod:`parsejson2gui` module, and can be constructed

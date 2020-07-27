@@ -5,7 +5,7 @@ from tkinter.ttk import Progressbar
 import tkinter.font as font
 
 #import collection types
-from tk_types import *
+from robodkgui.tk_types import *
 
 # tkinter helpers
 # ----------------
